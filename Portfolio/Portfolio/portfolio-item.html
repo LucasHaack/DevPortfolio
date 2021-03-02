@@ -1,0 +1,97 @@
+<!--You will need one of these for each project you can  click on-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel = "stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel = "stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+
+    <!--Change these fonts if you want. Change numbers to correct ones or go to google fonts and change the full link-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> <!--Different font styles-->
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src = "img/logo.png" alt = "">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Introduction-->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            <strong>Rainfall</strong>
+        </h1>
+        <p class ="section__subtitle section__subtitle--intro">Recent Weather</p>
+        <img src="img/rainfall_logo-kofi-profile.png" alt ="A picture from Sedona Arizona" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Rainfall was developed out of necessity. We wanted to know if we could mountain bike or if the trails would simply be too muddy.
+            It is suprisely hard to find accurate historical weather data on the internet and we wanted to fix that.
+            Our main goal with Rainfall has become to give the user the information they want to know without all of the other clutter.</p>
+              <p>Head over to <a href="https://rainfall.app" target="_blank" rel="noopener noreferrer">rainfall.app</a> to check it out!</p>
+        <img src="img/rainfall_screenshot.png" alt="A screenshot of Rainfall.app">
+        <p>Rainfall started as a simple, single page website that that told the user if and how much it had rained in their area of choice.
+             It has become a full fledged weather site with much more to come!</p>
+
+        <p>Rainfall's front end is built using only vanilla Javascript, CSS, and HTML. We wanted to keep the code base as simple as possible.
+            Vanilla JS is very fast compared to some of the other options and that has allowed us to keep the load times very low.
+             CSS Grid is very easy to use and makes styling a breeze, especially when we want to add a new feature.
+              By choosing not to use a heavy framework, we are able to keep Rainfall fast with very simple to read code.
+            </p>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <!--replace with real email-->
+        <a href="mailto:lucashaack5@gmail.com" class="footer__link">lucashaack5@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.openprocessing.org/user/230912?view=sketches">
+                    <i class="fab fa-js-square"></i>
+                </a>
+            </li>
+            <!-- <li class="social-list__item">
+                <a class="social-list__link" href="https://discordapp.com">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com">
+                    <i class="fas fa-blog"></i>
+                </a>
+            </li> -->
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/LucasHaack?tab=repositories">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
