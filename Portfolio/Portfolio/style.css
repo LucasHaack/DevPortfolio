@@ -6,13 +6,10 @@
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
-    /*--ff-secondary: 'Source Code Pro', monospace;*/
-    /*--ff-primary: 'Lora', serif;*/
     --ff-secondary: 'Roboto Slab', serif;
     
-     /*Change font-weight (--fw-) based on which font is selected*/
-    --fw-reg: 400; /*orginally 300 in video*/
-    --fw-bold: 900; /*Originally 900 in video*/
+    --fw-reg: 400;
+    --fw-bold: 900;
     
     --clr-light: #fff;
     --clr-dark: #303030;
@@ -69,7 +66,7 @@ strong { font-weight: var(--fw-bold) }
 
 /* Buttons */
 
-.btn {          /*.btn effects anything with class="btn"*/
+.btn {
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
@@ -279,8 +276,8 @@ header {
     .intro__img {
         grid-area: img;
         min-width: 250px;
-        position: relative; /*This puts the picture on top like photoshop layers.*/
-        z-index: 2; /* This also changes the the order. Like layers in photoshop*/
+        position: relative;
+        z-index: 2;
     }    
     
     .section__subtitle--intro {
@@ -393,8 +390,7 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*repeat(3, 1fr); /*first number changes number of rows in grid*/
-    /*might need a max width for giant screens*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item{
